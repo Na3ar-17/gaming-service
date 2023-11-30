@@ -1,0 +1,38 @@
+.switch {
+  @apply text-sm relative inline-block w-[3.7em] h-[1.8em];
+
+  input {
+    @apply hidden opacity-0 w-0 h-0;
+
+    &:checked + .slider::before {
+      @apply bg-primary-pink;
+    }
+
+    &:checked + .slider {
+      @apply bg-[#f5f5f8];
+    }
+
+    &:focus + .slider {
+      box-shadow: 0 0 1px #7f8996;
+    }
+
+    &:checked + .slider:before {
+      @apply translate-x-[1.9em];
+    }
+  }
+
+  .slider {
+    @apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-[#313033] transition-all rounded-[30px];
+    &:before {
+      content: "";
+      transition: 0.4s;
+      background-color: #aeaaae;
+      position: absolute;
+      height: 1.4em;
+      width: 1.4em;
+      border-radius: 20px;
+      left: 0.2em;
+      bottom: 0.2em;
+    }
+  }
+}

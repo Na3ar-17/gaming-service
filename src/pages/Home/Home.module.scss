@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "sidebar nav"
+    "sidebar content";
+
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 100px auto;
+  min-height: 100vh;
+  .nav {
+    grid-area: nav;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .content {
+    grid-area: content;
+    padding: 20px;
+  }
+}

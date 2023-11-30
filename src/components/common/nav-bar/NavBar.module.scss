@@ -1,0 +1,65 @@
+.nav {
+  @apply fixed grid grid-cols-2 mx-12 mt-5  items-center bg-transparent;
+
+  .search {
+    @apply flex justify-between;
+
+    .utils {
+      @apply flex gap-5 items-center;
+      .input {
+        @apply relative;
+        input {
+          @apply bg-input-bg-1 py-2 px-11 w-96 block relative rounded-md text-white;
+        }
+
+        .searchIcon {
+          @apply absolute text-[#7F8996] cursor-pointer transition-all hover:text-[#5d636a];
+          position: absolute;
+          top: 50%;
+          left: 6%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .icons {
+        @apply text-[#7F8996] cursor-pointer hover:text-[#5d636a] transition-all;
+      }
+    }
+  }
+
+  .user {
+    @apply flex justify-end items-center;
+
+    > div {
+      @apply ml-8 flex gap-7;
+
+      span {
+        @apply font-bold text-white;
+      }
+
+      p {
+        @apply font-semibold text-[#7F8996];
+      }
+    }
+
+    .avatar {
+      @apply relative cursor-pointer;
+      .image {
+        @apply w-14 rounded-full;
+      }
+
+      &::before {
+        content: "";
+        width: 63px;
+        height: 63px;
+        background-color: #343338;
+        border-radius: 50%;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
