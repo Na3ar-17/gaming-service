@@ -1,11 +1,11 @@
 .container {
   display: grid;
   grid-template-areas:
-    "sidebar nav"
+    "sidebar nav "
     "sidebar content";
 
-  grid-template-columns: 240px 1fr;
-  grid-template-rows: 100px auto;
+  grid-template-columns: 240px auto;
+  grid-template-rows: 0;
   min-height: 100vh;
   .nav {
     grid-area: nav;
@@ -15,7 +15,8 @@
     grid-area: sidebar;
   }
   .content {
+    position: relative;
+    z-index: 1;
     grid-area: content;
-    padding: 20px;
   }
 }

@@ -22,6 +22,7 @@ import Switch from "@/components/ui/Switch/Switch";
 import { LuTwitter } from "react-icons/lu";
 import { FiYoutube } from "react-icons/fi";
 import { LiaFacebookSquare } from "react-icons/lia";
+import CheckBox from "@/components/ui/CheckBox/CheckBox";
 
 const SideBar: NextPage = () => {
   return (
@@ -30,7 +31,6 @@ const SideBar: NextPage = () => {
         <span>GOOD</span>
         <span>GAMES</span>
       </div>
-
       <div className={styles.play}>
         <Switch />
       </div>

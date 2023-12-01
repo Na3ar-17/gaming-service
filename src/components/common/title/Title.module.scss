@@ -1,0 +1,71 @@
+.container {
+  @apply w-full min-h-full relative px-10;
+  background: url("../../../../public//wallpaper2.jpeg");
+  background-size: cover;
+  z-index: -10;
+
+  .content {
+    @apply min-h-[450px] w-auto flex flex-col pt-32  justify-between;
+
+    .text {
+      p {
+        &:first-child {
+          @apply text-white text-7xl font-bold;
+        }
+
+        &:nth-child(2) {
+          @apply text-text-common text-6xl font-semibold pt-4;
+          span {
+            @apply text-primary-pink;
+          }
+        }
+      }
+      div {
+        @apply text-text-common transition-all duration-300 hover:text-side-bar-el-active w-fit text-xl font-medium pt-3 cursor-pointer relative;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 10px;
+          height: 2px;
+          background-color: white;
+          transition: all 0.3s ease;
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+
+    .utils {
+      @apply flex gap-6 items-center;
+
+      div {
+        @apply flex gap-3;
+        p {
+          @apply font-semibold;
+        }
+        .edit {
+          @apply relative;
+          .icon {
+            @apply text-2xl cursor-pointer block text-[#62686E] hover:text-side-bar-el-active transition-all;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #30373f;
+            width: 30px;
+            height: 30px;
+            z-index: -1;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

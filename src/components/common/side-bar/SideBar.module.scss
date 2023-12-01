@@ -1,5 +1,6 @@
 .aside {
-  @apply bg-sidebar-bg fixed w-[245px]  min-h-screen flex flex-col items-start px-9 py-6 gap-5;
+  @apply bg-sidebar-bg fixed w-[240px] min-h-screen flex flex-col items-start px-9 pt-5 gap-5;
+  z-index: 1;
   .logo {
     @apply cursor-pointer -mt-1 ml-4;
     span {
@@ -19,7 +20,7 @@
     .list {
       @apply mb-8;
       li {
-        @apply text-side-bar-el text-[14px] flex gap-4 mb-3 cursor-pointer transition-all hover:text-side-bar-el-active;
+        @apply text-side-bar-el font-semibold text-[14px] flex gap-4 mb-3 cursor-pointer transition-all hover:text-side-bar-el-active;
         .icon {
           @apply text-xl;
         }

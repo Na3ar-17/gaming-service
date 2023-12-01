@@ -1,0 +1,27 @@
+.container {
+  @apply relative cursor-pointer text-[17px] rounded-sm select-none bg-button-v1 block;
+
+  input {
+    @apply absolute opacity-0 cursor-pointer h-0 w-0;
+  }
+
+  .checkmark {
+    @apply absolute top-0 left-0  h-full w-full;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      background-color: white;
+      width: 50%;
+      height: 50%;
+      transform: scale(0);
+      transition: 0.1s ease;
+    }
+  }
+
+  input:checked ~ .checkmark:after {
+    transform: scale(1);
+  }
+}
