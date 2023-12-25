@@ -27,13 +27,6 @@
       }
     }
 
-    .socials {
-      @apply flex justify-between;
-      .icon {
-        @apply text-[18px] text-side-bar-el-active cursor-pointer transition-all hover:text-side-bar-el;
-      }
-    }
-
     .suport {
       @apply mt-8;
     }

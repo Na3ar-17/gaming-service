@@ -1,8 +1,8 @@
 .container {
   @apply w-full min-h-full relative px-10;
   background: url("../../../../public//wallpaper2.jpeg");
-  background-size: cover;
-  z-index: -10;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   .content {
     @apply min-h-[450px] w-auto flex flex-col pt-32  justify-between;

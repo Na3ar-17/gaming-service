@@ -1,0 +1,13 @@
+.navigation {
+  @apply grid grid-cols-2 px-2 mt-7;
+
+  .links {
+    ul {
+      @apply flex gap-8;
+    }
+  }
+
+  .box {
+    @apply flex justify-end;
+  }
+}

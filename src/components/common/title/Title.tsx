@@ -5,6 +5,8 @@ import ButtonV1 from "@/components/ui/Buttons/ButtonV1/ButtonV1";
 import ButtonV2 from "@/components/ui/Buttons/ButtonV2/ButtonV2";
 import CheckBox from "@/components/ui/CheckBox/CheckBox";
 import ModeEditOutlineOutlinedIcon from "@mui/icons-material/ModeEditOutlineOutlined";
+import Navigation from "../navigation/Navigation";
+import GameCard from "../Cards/GameCard/GameCard";
 const Title: NextPage = () => {
   return (
     <section className={styles.container}>
@@ -29,6 +31,8 @@ const Title: NextPage = () => {
           </div>
         </div>
       </main>
+      <Navigation />
+      <GameCard />
     </section>
   );
 };

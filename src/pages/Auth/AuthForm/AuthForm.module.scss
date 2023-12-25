@@ -1,0 +1,66 @@
+.section {
+  @apply w-full  h-full fixed bg-no-repeat bg-cover grid place-items-center;
+  background-image: url("../../../../public/bg-auth.jpg");
+  //top-[50%] left-[25%] -translate-x-[50%] -translate-y-[50%]
+  .form {
+    @apply rounded-lg grid px-10 pt-8 w-[480px] h-[520px] bg-bg-form-auth relative;
+    .icons {
+      @apply w-32;
+    }
+
+    .text {
+      p {
+        &:first-child {
+          @apply text-5xl font-bold;
+        }
+
+        &:last-child {
+          @apply text-3xl text-text-common font-semibold;
+          span {
+            @apply text-primary-pink;
+          }
+        }
+      }
+    }
+
+    .inputs {
+      @apply grid gap-4;
+      .input {
+        @apply relative h-11;
+
+        .icon {
+          @apply text-side-bar-el-active text-[18px] absolute top-[50%] left-[7%] -translate-x-[50%] -translate-y-[50%];
+        }
+        .email,
+        .pass {
+          @apply w-full h-11 bg-input-bg-1 px-12 rounded-full;
+        }
+
+        .pass {
+          @apply bg-input-bg-2 border-input-bg-1 border-2 border-solid;
+        }
+      }
+
+      .error {
+      }
+
+      .utils {
+        @apply grid grid-cols-2 items-center;
+        .button {
+          @apply bg-primary-pink active:scale-95 transition-all w-40 font-semibold cursor-pointer h-12 rounded-full text-center;
+        }
+
+        div {
+          @apply flex items-center gap-2;
+        }
+      }
+
+      .reg {
+        @apply transition-all text-[15px] text-center;
+        a {
+          @apply text-white  hover:text-slate-300;
+        }
+      }
+    }
+  }
+}

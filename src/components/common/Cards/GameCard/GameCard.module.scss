@@ -1,3 +1,24 @@
-.card {
-  @apply w-[400px] h-[300px] bg-card-bg;
+.container {
+  @apply grid grid-cols-2 justify-center;
+  .card {
+    @apply w-[520px] h-[290px] bg-card-bg mt-10 p-10;
+  }
+
+  .info {
+    .title,
+    .underTitle {
+      @apply text-white text-2xl uppercase font-bold;
+    }
+
+    .underTitle {
+      @apply text-3xl;
+      span {
+        @apply text-primary-pink;
+      }
+    }
+
+    .description {
+      @apply text-side-bar-el w-[180px];
+    }
+  }
 }

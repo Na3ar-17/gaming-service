@@ -14,15 +14,13 @@ import {
   MdOutlineAccountBalanceWallet,
 } from "react-icons/md";
 import { GrTask } from "react-icons/gr";
-import { FaRegHeart, FaInstagram } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 import EmojiEventsOutlinedIcon from "@mui/icons-material/EmojiEventsOutlined";
 import { BiBox } from "react-icons/bi";
 import ReportGmailerrorredIcon from "@mui/icons-material/ReportGmailerrorred";
 import Switch from "@/components/ui/Switch/Switch";
-import { LuTwitter } from "react-icons/lu";
-import { FiYoutube } from "react-icons/fi";
-import { LiaFacebookSquare } from "react-icons/lia";
-import CheckBox from "@/components/ui/CheckBox/CheckBox";
+import Socials from "@/components/ui/Socials/Socials";
+import Link from "next/link";
 
 const SideBar: NextPage = () => {
   return (
@@ -82,17 +80,10 @@ const SideBar: NextPage = () => {
           </li>
           <li>
             <BiBox className={styles.icon} />
-            suggestion
+            Suggestion
           </li>
         </ul>
-
-        <div className={styles.socials}>
-          <FaInstagram className={styles.icon} />
-          <LiaFacebookSquare className={styles.icon} />
-          <LuTwitter className={styles.icon} />
-          <FiYoutube className={styles.icon} />
-        </div>
-
+        <Socials />
         <div className={styles.suport}>
           <ul className={styles.list}>
             <li>

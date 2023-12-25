@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -25,6 +24,7 @@ const config: Config = {
         "text-common": "#4C5A63",
         "button-v1": "#30373F",
         "card-bg": "#202835",
+        "bg-form-auth": "#1A1B1D",
       },
     },
   },

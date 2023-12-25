@@ -18,10 +18,15 @@
       height: 50%;
       transform: scale(0);
       transition: 0.1s ease;
+      border-radius: 1px;
     }
   }
 
   input:checked ~ .checkmark:after {
     transform: scale(1);
+  }
+
+  &:active {
+    transform: scale(0.95);
   }
 }

@@ -1,0 +1,20 @@
+.item {
+  @apply text-side-bar-el transition-all  font-semibold cursor-pointer  text-[16px] relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    background-color: #8a5cd4;
+    width: 0;
+    height: 2px;
+    transition: all 0.2s;
+  }
+}
+.active {
+  @apply text-[#CFCFD1] scale-110;
+  &:before {
+    width: 100%;
+  }
+}
