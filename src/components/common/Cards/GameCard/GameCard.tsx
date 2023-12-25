@@ -1,8 +1,8 @@
-import { NextPage } from "next";
+import { NextPage } from 'next'
 
 interface Props {}
-import styles from "./GameCard.module.scss";
-import ButtonV1 from "@/components/ui/Buttons/ButtonV1/ButtonV1";
+import styles from './GameCard.module.scss'
+import ButtonV1 from '@/components/ui/Buttons/ButtonV1/ButtonV1'
 
 const GameCard: NextPage<Props> = ({}) => {
   return (
@@ -17,11 +17,11 @@ const GameCard: NextPage<Props> = ({}) => {
           <p className={styles.description}>
             Do not miss the begining of a new battle season
           </p>
-          <ButtonV1 text="PLAY NOW" />
+          <ButtonV1 height={35} text="PLAY NOW" />
         </div>
       </main>
     </section>
-  );
-};
+  )
+}
 
-export default GameCard;
+export default GameCard
