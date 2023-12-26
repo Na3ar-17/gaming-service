@@ -1,9 +1,8 @@
 .container {
   @apply w-full min-h-full relative px-10;
-  background: url("../../../../public//wallpaper2.jpeg");
+  background: url('../../../../public//wallpaper2.jpeg');
   background-size: contain;
   background-repeat: no-repeat;
-
   .content {
     @apply min-h-[450px] w-auto flex flex-col pt-32  justify-between;
 
@@ -23,7 +22,7 @@
       div {
         @apply text-text-common transition-all duration-300 hover:text-side-bar-el-active w-fit text-xl font-medium pt-3 cursor-pointer relative;
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           left: 0;
           bottom: 0;
@@ -53,7 +52,7 @@
             @apply text-2xl cursor-pointer block text-[#62686E] hover:text-side-bar-el-active transition-all;
           }
           &:before {
-            content: "";
+            content: '';
             position: absolute;
             top: 50%;
             left: 50%;
@@ -67,5 +66,8 @@
         }
       }
     }
+  }
+  .cards {
+    @apply grid grid-cols-2;
   }
 }

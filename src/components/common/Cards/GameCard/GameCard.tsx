@@ -1,23 +1,39 @@
-import { NextPage } from 'next'
-
-interface Props {}
-import styles from './GameCard.module.scss'
 import ButtonV1 from '@/components/ui/Buttons/ButtonV1/ButtonV1'
+import { IGameCardData } from '@/interfaces/game-card.interface'
+import { NextPage } from 'next'
+import Image from 'next/image'
+import { FaBookmark } from 'react-icons/fa'
+import { FaCrown } from 'react-icons/fa6'
+import styles from './GameCard.module.scss'
 
-const GameCard: NextPage<Props> = ({}) => {
+const GameCard: NextPage<IGameCardData> = ({
+  description,
+  id,
+  image,
+  title,
+  underTitle,
+}) => {
+  const lastLetters = underTitle.slice(underTitle.length - 4)
+  const word = underTitle.slice(0, underTitle.length - 4)
+
   return (
     <section className={styles.container}>
       <main className={styles.card}>
-        <div className={styles.icons}>Icon</div>
+        <div className={styles.icons}>
+          <FaBookmark className={styles.bookMark} />
+          <FaCrown className={styles.icon} />
+        </div>
         <div className={styles.info}>
-          <p className={styles.title}>Counter Strike</p>
+          <p className={styles.title}>{title}</p>
           <p className={styles.underTitle}>
-            Global Offen<span>sive</span>
+            {word}
+            <span>{lastLetters}</span>
           </p>
-          <p className={styles.description}>
-            Do not miss the begining of a new battle season
-          </p>
+          <p className={styles.description}>{description}</p>
           <ButtonV1 height={35} text="PLAY NOW" />
+        </div>
+        <div className={styles.image}>
+          <Image className={styles.hero} alt="hero" src={image} />
         </div>
       </main>
     </section>

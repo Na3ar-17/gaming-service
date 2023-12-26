@@ -1,24 +1,54 @@
 .container {
   @apply grid grid-cols-2 justify-center;
   .card {
-    @apply w-[520px] h-[290px] bg-card-bg mt-10 p-10;
-  }
+    @apply w-[580px] h-[290px] bg-card-bg mt-10 p-10 relative rounded-md;
+    background: rgb(39, 38, 44);
+    background: linear-gradient(
+      297deg,
+      rgba(39, 38, 44, 1) 0%,
+      rgba(32, 40, 53, 1) 93%
+    );
 
-  .info {
-    .title,
-    .underTitle {
-      @apply text-white text-2xl uppercase font-bold;
+    .icons {
+      @apply absolute left-5 cursor-pointer top-[-2px] w-10 h-10 grid place-items-center;
+      .bookMark {
+        @apply text-[38px] text-black;
+      }
+      .icon {
+        @apply text-yellow-500 text-[16px];
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
+    .info {
+      @apply mt-7;
+      .title,
+      .underTitle {
+        @apply text-white text-2xl font-bold;
+      }
 
-    .underTitle {
-      @apply text-3xl;
-      span {
-        @apply text-primary-pink;
+      .underTitle {
+        @apply text-3xl;
+        span {
+          @apply text-primary-pink;
+        }
+      }
+
+      .description {
+        @apply text-side-bar-el w-[180px] mt-2 mb-2;
       }
     }
 
-    .description {
-      @apply text-side-bar-el w-[180px];
+    .image {
+      .hero {
+        @apply absolute w-[300px] right-0 bottom-0;
+      }
+
+      .hero2 {
+        @apply absolute w-[260px]  right-5 bottom-0;
+      }
     }
   }
 }
