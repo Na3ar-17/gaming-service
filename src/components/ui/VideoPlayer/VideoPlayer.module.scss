@@ -1,0 +1,13 @@
+.box {
+  position: relative;
+  width: 100%;
+
+  .shadow {
+    position: absolute;
+    width: inherit;
+    aspect-ratio: 16 /7;
+    -webkit-box-shadow: inset 0px -10px 100px 120px rgba(30, 30, 32, 1);
+    -moz-box-shadow: inset 0px -10px 100px 120px rgba(30, 30, 32, 1);
+    box-shadow: inset 0px -10px 100px 120px rgba(30, 30, 32, 1);
+  }
+}
