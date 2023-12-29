@@ -1,4 +1,5 @@
 'use client'
+import Stats from '@/components/display/Statistics/Stats'
 import Avatar from '@/components/ui/Avatar/Avatar'
 import ButtonV1 from '@/components/ui/Buttons/ButtonV1/ButtonV1'
 import ButtonV2 from '@/components/ui/Buttons/ButtonV2/ButtonV2'
@@ -6,11 +7,10 @@ import CheckBox from '@/components/ui/CheckBox/CheckBox'
 import VideoPlayer from '@/components/ui/VideoPlayer/VideoPlayer'
 import { gameCardData } from '@/data/game-card.data'
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined'
+import { NextPage } from 'next'
 import GameCard from '../../common/Cards/GameCard/GameCard'
 import Navigation from '../../common/navigation/Navigation'
 import styles from './Title.module.scss'
-import { NextPage } from 'next'
-import Stats from '@/components/common/Statistics/Stats'
 
 const Title: NextPage = () => {
   return (

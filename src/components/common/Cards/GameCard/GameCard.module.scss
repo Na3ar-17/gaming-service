@@ -45,9 +45,14 @@
       .hero {
         @apply absolute w-[300px] right-0 bottom-0;
       }
-
-      .hero2 {
-        @apply absolute w-[260px]  right-5 bottom-0;
+    }
+  }
+  &:last-child {
+    .card {
+      .image {
+        .hero {
+          @apply w-[260px]  right-5 bottom-0;
+        }
       }
     }
   }

@@ -1,8 +1,14 @@
 .li {
+  transition: all 0.2s ease;
+  width: fit-content;
   a {
     @apply text-side-bar-el font-semibold text-[14px] flex gap-4 mb-3 cursor-pointer transition-all hover:text-side-bar-el-active;
     .icon {
       @apply text-xl;
     }
+  }
+
+  &:hover {
+    @apply translate-x-2;
   }
 }
