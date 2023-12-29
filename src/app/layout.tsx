@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={styles.html}>
       <body
         suppressHydrationWarning={true}
         className={`${Pop.className} ${styles.container}`}
