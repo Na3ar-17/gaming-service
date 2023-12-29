@@ -6,10 +6,11 @@ import CheckBox from '@/components/ui/CheckBox/CheckBox'
 import VideoPlayer from '@/components/ui/VideoPlayer/VideoPlayer'
 import { gameCardData } from '@/data/game-card.data'
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined'
-import GameCard from '../Cards/GameCard/GameCard'
-import Navigation from '../navigation/Navigation'
+import GameCard from '../../common/Cards/GameCard/GameCard'
+import Navigation from '../../common/navigation/Navigation'
 import styles from './Title.module.scss'
 import { NextPage } from 'next'
+import Stats from '@/components/common/Statistics/Stats'
 
 const Title: NextPage = () => {
   return (
@@ -17,8 +18,9 @@ const Title: NextPage = () => {
       <VideoPlayer
         style={{
           position: 'absolute',
-          top: '0',
+          top: '0%',
           zIndex: '-1',
+          aspectRatio: '16/7',
         }}
       />
       <div className={styles.video}>
@@ -59,6 +61,7 @@ const Title: NextPage = () => {
             />
           ))}
         </div>
+        <Stats />
       </section>
     </>
   )

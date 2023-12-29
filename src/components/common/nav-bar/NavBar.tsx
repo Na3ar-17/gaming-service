@@ -1,11 +1,11 @@
-import React, { FC } from "react";
-import styles from "./NavBar.module.scss";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import TextsmsOutlinedIcon from "@mui/icons-material/TextsmsOutlined";
-import SearchIcon from "@mui/icons-material/Search";
-import Switch from "../../ui/Switch/Switch";
-import CounterStrike from "../../ui/CsIcon/CounterStrike";
-import Avatar from "@/components/ui/Avatar/Avatar";
+import React, { FC } from 'react'
+import styles from './NavBar.module.scss'
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
+import TextsmsOutlinedIcon from '@mui/icons-material/TextsmsOutlined'
+import SearchIcon from '@mui/icons-material/Search'
+import Switch from '../../ui/Switches/Switch-Small/Switch'
+import CounterStrike from '../../ui/CsIcon/CounterStrike'
+import Avatar from '@/components/ui/Avatar/Avatar'
 const NavBar: FC = () => {
   return (
     <nav className={styles.nav}>
@@ -31,7 +31,7 @@ const NavBar: FC = () => {
         <Avatar />
       </section>
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

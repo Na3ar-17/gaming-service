@@ -13,17 +13,23 @@ const DynamicPlayer: FC<IVideoProps> = ({
   width = '100',
   height = 'inherit',
 }) => {
-  let i = 0
-
+  const [isPlaying, setPlaying] = useState<boolean>(false)
+  const [currentVideo, setCurrentVideo] = useState(data[0])
+  const handleOnReady = () => setTimeout(() => setPlaying(true), 1000)
+  const handleOnEnded = () => {
+    setCurrentVideo(data[2])
+  }
   return (
     <div className={styles.box}>
       <ReactPlayer
         style={style}
         width={width}
         height={height}
-        url={data[1]}
+        url={data[0]}
         controls={false}
-        playing={true}
+        playing={isPlaying}
+        onReady={handleOnReady}
+        onEnded={handleOnEnded}
       />
       <div className={styles.shadow}></div>
     </div>

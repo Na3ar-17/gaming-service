@@ -1,5 +1,5 @@
 import Socials from '@/components/ui/Socials/Socials'
-import Switch from '@/components/ui/Switch/Switch'
+import Switch from '@/components/ui/Switches/Switch-large/Switch'
 import { NextPage } from 'next'
 import styles from './SideBar.module.scss'
 

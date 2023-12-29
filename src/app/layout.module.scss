@@ -1,8 +1,9 @@
 .container {
+  scroll-behavior: smooth;
   display: grid;
   grid-template-areas:
-    "sidebar nav "
-    "sidebar content";
+    'sidebar nav '
+    'sidebar content';
 
   grid-template-columns: 240px auto;
   grid-template-rows: 0;
