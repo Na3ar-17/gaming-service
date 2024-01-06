@@ -26,6 +26,8 @@ const config: Config = {
         'card-bg': '#202835',
         'card-bg2': '#27262C',
         'bg-form-auth': '#1A1B1D',
+        'bg-variant1': '#23262D',
+        'stats-text': '#47545A',
       },
     },
   },

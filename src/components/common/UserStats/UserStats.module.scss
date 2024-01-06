@@ -1,3 +1,46 @@
 .container {
   @apply min-h-screen;
+
+  .head {
+    @apply relative grid mb-4 mt-5;
+    .title {
+      p {
+        @apply text-white text-3xl font-bold;
+      }
+    }
+
+    .navigation {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .body {
+    .info {
+      @apply bg-bg-variant1 relative flex gap-x-20 p-5 justify-center rounded-md items-center;
+      .gameIcon {
+        .image {
+          @apply w-[120px];
+          position: absolute;
+          top: 50%;
+          left: 7%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .userInfo {
+        @apply grid grid-cols-3 gap-2 gap-x-10;
+        div {
+          p {
+            @apply text-stats-text font-semibold mt-3 mb-3;
+            span {
+              @apply text-white text-sm font-semibold;
+            }
+          }
+        }
+      }
+    }
+  }
 }

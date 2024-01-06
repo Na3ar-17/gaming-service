@@ -37,6 +37,9 @@
       transform: translate(-50%, -50%);
       font-weight: 600;
       transition: all 0.4s;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
     .ball {
       @apply bg-white h-[36px] w-[36px] rounded-full absolute left-0;
