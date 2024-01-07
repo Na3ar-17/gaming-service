@@ -10,9 +10,9 @@ import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutl
 import { NextPage } from 'next'
 import GameCard from '../../common/Cards/GameCard/GameCard'
 import Navigation from '../../common/navigation/Navigation'
-import styles from './Title.module.scss'
+import styles from './Main.module.scss'
 
-const Title: NextPage = () => {
+const Main: NextPage = () => {
   return (
     <>
       <VideoPlayer
@@ -64,4 +64,4 @@ const Title: NextPage = () => {
   )
 }
 
-export default Title
+export default Main
