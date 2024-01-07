@@ -1,0 +1,7 @@
+.wrapper {
+  @apply flex gap-4 items-center;
+
+  .icon {
+    @apply text-[#6C767C] text-base cursor-pointer hover:text-white transition-all;
+  }
+}

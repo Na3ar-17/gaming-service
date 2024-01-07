@@ -23,9 +23,6 @@ const Title: NextPage = () => {
           aspectRatio: '16/7',
         }}
       />
-      <div className={styles.video}>
-        <div className={styles.shadow}></div>
-      </div>
       <section className={styles.container}>
         <main className={styles.content}>
           <div className={styles.text}>

@@ -1,0 +1,11 @@
+.items {
+  @apply flex gap-[7px];
+
+  .item {
+    @apply w-2 h-2 rounded-full bg-[#404B50] cursor-pointer transition-all hover:bg-[#788E99];
+  }
+
+  .active {
+    @apply scale-110 bg-[#788E99];
+  }
+}

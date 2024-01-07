@@ -3,3 +3,11 @@
  https://cdn.akamai.steamstatic.com/apps/csgo/videos/csgo_react/cs2/competitive_clip.webm
  https://www.counter-strike.net/
 }
+
+-Shadcn {
+    Sonner
+    Sheet
+    Alert Dialog
+    Avatar
+    Button
+}

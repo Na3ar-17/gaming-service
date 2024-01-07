@@ -2,6 +2,7 @@ import { NextPage } from 'next'
 import styles from './UserStats.module.scss'
 import logo from '../../../../public/csIconForStats.png'
 import Image from 'next/image'
+import Pagination from '@/components/ui/Pagination/Pagination'
 interface Props {}
 
 const UserStats: NextPage<Props> = ({}) => {
@@ -11,7 +12,9 @@ const UserStats: NextPage<Props> = ({}) => {
         <div className={styles.title}>
           <p>Statistics</p>
         </div>
-        <div className={styles.navigation}>Navigation</div>
+        <div className={styles.navigation}>
+          <Pagination />
+        </div>
       </div>
 
       <div className={styles.body}>
