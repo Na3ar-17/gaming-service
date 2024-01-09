@@ -2,7 +2,8 @@
   display: grid;
   grid-template-areas:
     'sidebar nav '
-    'sidebar content';
+    'sidebar content'
+    'footer footer';
 
   grid-template-columns: 240px auto;
   grid-template-rows: 0;
@@ -18,5 +19,9 @@
     position: relative;
     z-index: 1;
     grid-area: content;
+  }
+
+  .footer {
+    grid-area: footer;
   }
 }

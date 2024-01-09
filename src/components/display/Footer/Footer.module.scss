@@ -1,0 +1,25 @@
+.footer {
+  @apply grid place-items-center grid-cols-2  min-w-full h-28 bg-footer-bg mt-14;
+
+  .nav {
+    @apply flex flex-col justify-end;
+    .list {
+      @apply flex gap-5;
+
+      li {
+        @apply text-[#AEB4BB] hover:text-primary-pink transition-all font-semibold;
+      }
+    }
+
+    .author {
+      @apply mt-2;
+      p {
+        @apply text-side-bar-el;
+      }
+    }
+  }
+
+  .socials {
+    @apply flex items-center gap-11;
+  }
+}

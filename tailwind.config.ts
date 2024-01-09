@@ -28,6 +28,7 @@ const config: Config = {
         'bg-form-auth': '#1A1B1D',
         'bg-variant1': '#23262D',
         'stats-text': '#47545A',
+        'footer-bg': '#28292B',
       },
     },
   },

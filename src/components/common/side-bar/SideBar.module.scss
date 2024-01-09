@@ -1,5 +1,5 @@
 .aside {
-  @apply bg-sidebar-bg fixed w-[240px] min-h-screen flex flex-col items-start px-9 pt-5 gap-5;
+  @apply bg-sidebar-bg sticky top-0 w-[240px] min-h-screen flex flex-col items-start px-9 pt-5 gap-5;
   z-index: 1;
   .logo {
     @apply cursor-pointer -mt-1 ml-4;

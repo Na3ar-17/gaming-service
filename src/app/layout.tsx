@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter, Nova_Square, Poppins } from 'next/font/google'
-import './globals.css'
+import './globals.scss'
 import SideBar from '@/components/common/side-bar/SideBar'
 import NavBar from '@/components/common/nav-bar/NavBar'
 import styles from './layout.module.scss'
+import Footer from '@/components/display/Footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 const Nova = Nova_Square({ subsets: ['latin'], weight: '400' })
@@ -32,6 +33,9 @@ export default function RootLayout({
           <SideBar />
         </div>
         <div className={styles.content}>{children}</div>
+        <div className={styles.footer}>
+          <Footer />
+        </div>
       </body>
     </html>
   )
