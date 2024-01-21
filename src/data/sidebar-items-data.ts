@@ -19,7 +19,7 @@ import {
 import { TbMessageCircle2 } from 'react-icons/tb'
 
 export const sidebarItemsData: ISideBarElProps[] = [
-  { text: 'Profile', link: '!#', Icon: AiOutlineUser },
+  { text: 'Profile', link: 'profile', Icon: AiOutlineUser },
   { text: 'Search', link: '!#', Icon: IoIosSearch },
   { text: 'Friends', link: '!#', Icon: LiaUserFriendsSolid },
   { text: 'Messages', link: '!#', Icon: TbMessageCircle2 },

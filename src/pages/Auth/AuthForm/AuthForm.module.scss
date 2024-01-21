@@ -1,9 +1,9 @@
 .section {
   @apply w-full  h-full fixed bg-no-repeat bg-cover grid place-items-center;
-  background-image: url("../../../../public/bg-auth.jpg");
-  //top-[50%] left-[25%] -translate-x-[50%] -translate-y-[50%]
+  background-image: url('../../../../public/bg-auth.jpg');
   .form {
     @apply rounded-lg grid px-10 pt-8 w-[480px] h-[520px] bg-bg-form-auth relative;
+    overflow: hidden;
     .icons {
       @apply w-32;
     }
@@ -42,6 +42,26 @@
       }
 
       .error {
+        @apply text-red-800 ml-2;
+        animation: error 0.3s ease forwards;
+      }
+
+      @keyframes error {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(5px);
+        }
+        50% {
+          transform: translateX(-5px);
+        }
+        75% {
+          transform: translateX(5px);
+        }
+        100% {
+          transform: translateX(0);
+        }
       }
 
       .utils {
@@ -61,6 +81,16 @@
           @apply text-white  hover:text-slate-300;
         }
       }
+    }
+
+    .validationProgres {
+      position: absolute;
+      bottom: 1px;
+      left: 0;
+      width: 0%;
+      border-radius: 2px;
+      height: 3px;
+      background-color: green;
     }
   }
 }

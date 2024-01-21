@@ -1,0 +1,14 @@
+.container {
+  @apply pt-9 px-6;
+  .user {
+    @apply w-full flex items-center py-4 px-8;
+    background: rgb(39, 38, 44);
+    background: linear-gradient(
+      297deg,
+      rgba(39, 38, 44, 1) 0%,
+      rgba(32, 40, 53, 1) 93%
+    );
+    aspect-ratio: 16 / 3.5;
+    border-radius: 10px;
+  }
+}

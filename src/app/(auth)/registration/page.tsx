@@ -1,9 +1,8 @@
-"use client";
-import AuthForm from "@/pages/Auth/AuthForm/AuthForm";
-import { NextPage } from "next";
+import AuthForm from '@/pages/Auth/AuthForm/AuthForm'
+import { NextPage } from 'next'
 
 const Page: NextPage = () => {
-  return <AuthForm isRegister={true} />;
-};
+  return <AuthForm isRegister={true} />
+}
 
-export default Page;
+export default Page

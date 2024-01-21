@@ -1,6 +1,9 @@
 .li {
   transition: all 0.2s ease;
   width: fit-content;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   a {
     @apply text-side-bar-el font-semibold text-[14px] flex gap-4 mb-3 cursor-pointer transition-all hover:text-side-bar-el-active;
     .icon {

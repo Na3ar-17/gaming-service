@@ -1,26 +1,28 @@
-import { FC } from "react";
-import styles from "./Avatar.module.scss";
-import Image from "next/image";
-import avatar from "../../../../public/avatar.jpg";
-
+import { FC } from 'react'
+import styles from './Avatar.module.scss'
+import Image from 'next/image'
+import avatar from '../../../../public/avatar.jpg'
 interface IProps {
-  size?: number;
+  size?: number
 }
 const Avatar: FC<IProps> = ({ size = 56 }) => {
   return (
-    <div className={styles.avatar}>
+    <div
+      style={{ width: size + 'px', height: size + 'px' }}
+      className={styles.avatar}
+    >
       <Image
-        style={{ width: size + "px" }}
+        style={{ width: size + 'px' }}
         className={styles.image}
         src={avatar}
         alt="avatar"
       />
       <div
-        style={{ width: size + 7 + "px", height: size + 7 + "px" }}
+        style={{ width: size + 7 + 'px', height: size + 7 + 'px' }}
         className={styles.imageBG}
       ></div>
     </div>
-  );
-};
+  )
+}
 
-export default Avatar;
+export default Avatar

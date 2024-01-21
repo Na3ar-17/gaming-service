@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import styles from './UserStats.module.scss'
-import logo from '../../../../public/csIconForStats.png'
+import logo from '../../../../public/pubg-icon2.png'
 import Image from 'next/image'
 import Pagination from '@/components/ui/Pagination/Pagination'
 interface Props {}

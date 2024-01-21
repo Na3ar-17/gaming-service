@@ -1,9 +1,9 @@
 .avatar {
   @apply relative cursor-pointer;
   .image {
-    @apply rounded-full z-50;
+    @apply rounded-full absolute;
+    z-index: 100;
   }
-
   .imageBG {
     background-color: #343338;
     border-radius: 50%;

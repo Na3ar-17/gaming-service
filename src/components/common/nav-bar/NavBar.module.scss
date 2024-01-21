@@ -1,21 +1,22 @@
 .nav {
-  @apply w-[90%] left-0 relative z-50 ml-12 mt-5 flex justify-between items-center z-50;
+  @apply w-[90%] left-0 relative z-50 ml-12 mt-5 flex  justify-between items-center z-50;
 
-  .search {
-    @apply flex justify-between;
-    .logo {
-      @apply cursor-pointer -mt-1 ml-4;
-      span {
-        @apply block font-bold text-center  text-xl;
-        &:first-child {
-          @apply text-primary-pink;
-        }
+  .logo {
+    @apply cursor-pointer -mt-1 ml-4;
+    span {
+      @apply block font-bold text-center  text-xl;
+      &:first-child {
+        @apply text-primary-pink;
+      }
 
-        &:last-child {
-          @apply text-[#DBDBDB];
-        }
+      &:last-child {
+        @apply text-[#DBDBDB];
       }
     }
+  }
+  .search {
+    @apply flex justify-between;
+
     .utils {
       @apply flex gap-5 items-center;
       .input {

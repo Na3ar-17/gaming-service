@@ -22,20 +22,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={styles.html}>
-      <body
-        suppressHydrationWarning={true}
-        className={`${Pop.className} ${styles.container}`}
-      >
-        <div className={styles.nav}>
+      <head>
+        <link rel="icon" href="/public/global-logo.png" />
+      </head>
+      <body suppressHydrationWarning={true} className={`${Pop.className} `}>
+        {/* <div className={styles.nav}>
           <NavBar />
         </div>
         <div className={styles.sidebar}>
           <SideBar />
         </div>
-        <div className={styles.content}>{children}</div>
         <div className={styles.footer}>
           <Footer />
-        </div>
+        </div> */}
+
+        {/* <div className={styles.content}>{children}</div> */}
+        {children}
       </body>
     </html>
   )

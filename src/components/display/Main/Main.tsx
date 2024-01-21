@@ -19,6 +19,7 @@ const Main: NextPage = () => {
         style={{
           position: 'absolute',
           top: '0%',
+          left: '0%',
           zIndex: '-1',
           aspectRatio: '16/7',
         }}
