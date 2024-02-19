@@ -17,26 +17,24 @@ const GameCard: NextPage<IGameCardData> = ({
   const word = underTitle.slice(0, underTitle.length - 4)
 
   return (
-    <section className={styles.container}>
-      <main className={styles.card}>
-        <div className={styles.icons}>
-          <FaBookmark className={styles.bookMark} />
-          <FaCrown className={styles.icon} />
-        </div>
-        <div className={styles.info}>
-          <p className={styles.title}>{title}</p>
-          <p className={styles.underTitle}>
-            {word}
-            <span>{lastLetters}</span>
-          </p>
-          <p className={styles.description}>{description}</p>
-          <ButtonV1 height={35} text="PLAY NOW" />
-        </div>
-        <div className={styles.image}>
-          <Image className={styles.hero} alt="hero" src={image} />
-        </div>
-      </main>
-    </section>
+    <main className={styles.card}>
+      <div className={styles.icons}>
+        <FaBookmark className={styles.bookMark} />
+        <FaCrown className={styles.icon} />
+      </div>
+      <div className={styles.info}>
+        <p className={styles.title}>{title}</p>
+        <p className={styles.underTitle}>
+          {word}
+          <span>{lastLetters}</span>
+        </p>
+        <p className={styles.description}>{description}</p>
+        <ButtonV1 height={35} text="PLAY NOW" />
+      </div>
+      <div className={styles.image}>
+        <Image className={styles.hero} alt="hero" src={image} />
+      </div>
+    </main>
   )
 }
 

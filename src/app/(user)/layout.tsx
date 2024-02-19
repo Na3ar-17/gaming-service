@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import styles from './layout.module.scss'
 import Footer from '@/components/display/Footer/Footer'
 import SideBar from '@/components/common/side-bar/SideBar'
+import UserNavbar from '@/components/common/UserNavbar/UserNavbar'
 
 export const metadata: Metadata = {
   title: 'Good Games || Profile',
@@ -18,6 +19,9 @@ export default function AuthLayout({
       <div className={styles.sidebar}>
         <SideBar />
       </div>
+      {/* <div className={styles.navbar}>
+        <UserNavbar />
+      </div> */}
       <div className={styles.content}>{children}</div>
       <div className={styles.footer}>
         <Footer />

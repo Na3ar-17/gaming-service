@@ -1,14 +1,59 @@
 .container {
-  @apply pt-9 px-6;
+  @apply pt-10 px-6;
   .user {
-    @apply w-full flex items-center py-4 px-8;
-    background: rgb(39, 38, 44);
-    background: linear-gradient(
-      297deg,
-      rgba(39, 38, 44, 1) 0%,
-      rgba(32, 40, 53, 1) 93%
+    @apply w-full relative cursor-pointer flex items-center py-4 px-8;
+    background-image: linear-gradient(
+      90deg,
+      hsl(240deg 100% 4%) 0%,
+      hsl(238deg 60% 8%) 37%,
+      hsl(229deg 60% 11%) 56%,
+      hsl(224deg 71% 13%) 73%,
+      hsl(221deg 79% 15%) 100%
     );
     aspect-ratio: 16 / 3.5;
     border-radius: 10px;
+    transition: all 0.4 ease;
+
+    .editIcon {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: all 0.3s;
+      transform: translate(-50%, -50%);
+      @apply text-slate-500 text-3xl;
+
+      &:hover {
+        @apply text-slate-600;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      background: #00000067;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      .editIcon {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    &:hover::before {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
