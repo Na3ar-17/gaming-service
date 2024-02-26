@@ -3,32 +3,27 @@ import styles from './Footer.module.scss'
 import Socials from '@/components/ui/Socials/Socials'
 import ButtonV1 from '@/components/ui/Buttons/ButtonV1/ButtonV1'
 import Link from 'next/link'
+
+const linksData = [
+  { text: 'About us', link: '/about' },
+  { text: 'Terms', link: '/terms' },
+  { text: 'Conditions', link: '/conditions' },
+  { text: 'Privacy', link: '/privacy' },
+  { text: 'Press', link: '/press' },
+  { text: 'Help', link: '/help' },
+  { text: 'Advertisers', link: '/advertisers' },
+]
+
 const Footer: NextPage = () => {
   return (
     <footer className={styles.footer}>
       <nav className={styles.nav}>
         <ul className={styles.list}>
-          <li>
-            <Link href="!#"> About us </Link>
-          </li>
-          <li>
-            <Link href="!#">Terms </Link>
-          </li>
-          <li>
-            <Link href="!#">Conditions </Link>
-          </li>
-          <li>
-            <Link href="!#">Privacy </Link>
-          </li>
-          <li>
-            <Link href="!#"> Press</Link>
-          </li>
-          <li>
-            <Link href="!#"> Help</Link>
-          </li>
-          <li>
-            <Link href="!#"> Advertisers</Link>
-          </li>
+          {linksData.map((item, index) => (
+            <li key={index}>
+              <Link href={item.link}>{item.text}</Link>
+            </li>
+          ))}
         </ul>
         <div className={styles.author}>
           <p>@Gavrylyk Nazar - 2024</p>

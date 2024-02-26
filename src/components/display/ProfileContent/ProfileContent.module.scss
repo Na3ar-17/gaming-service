@@ -1,18 +1,80 @@
 .container {
   @apply pt-10 px-6;
-  .user {
-    @apply w-full relative cursor-pointer flex items-center py-4 px-8;
-    background-image: linear-gradient(
-      90deg,
-      hsl(240deg 100% 4%) 0%,
-      hsl(238deg 60% 8%) 37%,
-      hsl(229deg 60% 11%) 56%,
-      hsl(224deg 71% 13%) 73%,
-      hsl(221deg 79% 15%) 100%
-    );
+  .user-box {
+    @apply w-full relative;
     aspect-ratio: 16 / 3.5;
-    border-radius: 10px;
-    transition: all 0.4 ease;
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      aspect-ratio: inherit;
+
+      @apply flex items-center cursor-pointer py-4 px-8;
+
+      background-image: linear-gradient(
+        55deg,
+        hsl(240deg 10% 6%) 0%,
+        hsl(244deg 10% 6%) 9%,
+        hsl(248deg 10% 6%) 18%,
+        hsl(252deg 10% 7%) 27%,
+        hsl(256deg 10% 7%) 36%,
+        hsl(260deg 10% 7%) 45%,
+        hsl(264deg 9% 8%) 55%,
+        hsl(268deg 9% 8%) 64%,
+        hsl(272deg 9% 8%) 73%,
+        hsl(277deg 9% 9%) 82%,
+        hsl(281deg 9% 9%) 91%,
+        hsl(285deg 9% 9%) 100%
+      );
+
+      // background-image: url('../../../../public/bg-auth.jpg');
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      // background-position: 0;
+
+      border-radius: 10px;
+      transition: all 0.4 ease;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        background: #00000067;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+      }
+
+      &:hover::before {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &:hover {
+        .editIcon {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      .user {
+        @apply flex flex-col gap-3 items-center;
+
+        .status {
+          @apply text-sm text-green-500;
+          span {
+            @apply text-xs text-white;
+          }
+        }
+      }
+    }
 
     .editIcon {
       visibility: hidden;
@@ -28,32 +90,9 @@
         @apply text-slate-600;
       }
     }
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 10px;
-      width: 100%;
-      height: 100%;
-      background: #00000067;
-      visibility: hidden;
-      opacity: 0;
-      transition: all 0.3s;
-    }
-
-    &:hover {
-      .editIcon {
-        visibility: visible;
-        opacity: 1;
-      }
-    }
-
-    &:hover::before {
-      visibility: visible;
-      opacity: 1;
-    }
+  .user-info {
+    @apply mt-6;
   }
 }

@@ -25,7 +25,7 @@ const NavBar: FC = () => {
           <CounterStrikeIcon />
           <Switch />
         </div>
-        <Avatar />
+        <Avatar borderSize={63} />
       </div>
     </nav>
   )

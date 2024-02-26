@@ -4,8 +4,9 @@ import Image from 'next/image'
 import avatar from '../../../../public/avatar.jpg'
 interface IProps {
   size?: number
+  borderSize?: number
 }
-const Avatar: FC<IProps> = ({ size = 56 }) => {
+const Avatar: FC<IProps> = ({ size = 56, borderSize = 56 }) => {
   return (
     <div
       style={{ width: size + 'px', height: size + 'px' }}
@@ -18,7 +19,7 @@ const Avatar: FC<IProps> = ({ size = 56 }) => {
         alt="avatar"
       />
       <div
-        style={{ width: size + 7 + 'px', height: size + 7 + 'px' }}
+        style={{ width: borderSize + 'px', height: borderSize + 'px' }}
         className={styles.imageBG}
       ></div>
     </div>

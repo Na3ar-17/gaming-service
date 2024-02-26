@@ -7,8 +7,8 @@ import CheckBox from '@/components/ui/CheckBox/CheckBox'
 import VideoPlayer from '@/components/ui/VideoPlayer/VideoPlayer'
 import { gameCardData } from '@/data/game-card.data'
 import ModeEditOutlineOutlinedIcon from '@mui/icons-material/ModeEditOutlineOutlined'
-import GameCard from '../../common/cards/game-card/GameCard'
 import { NextPage } from 'next'
+import GameCard from '../../common/cards/game-card/GameCard'
 import Navigation from '../../common/navigation/Navigation'
 import styles from './Main.module.scss'
 
@@ -34,7 +34,7 @@ const Main: NextPage = () => {
             <div>more details</div>
           </div>
           <div className={styles.utils}>
-            <Avatar />
+            <Avatar borderSize={63} />
             <ButtonV1 />
             <ButtonV2 />
             <div>

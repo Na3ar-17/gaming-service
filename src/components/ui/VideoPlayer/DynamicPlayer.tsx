@@ -4,9 +4,8 @@ import ReactPlayer from 'react-player'
 import styles from './VideoPlayer.module.scss'
 
 const data: string[] = [
-  'https://cdn.akamai.steamstatic.com/apps/csgo/videos/csgo_react/cs2/competitive_clip.webm',
   'https://cdn.akamai.steamstatic.com/apps/csgo/videos/csgo_react/cs2/cs2_header.mp4',
-  'https://cdn.akamai.steamstatic.com/steam/apps/256987113/movie480_vp9.webm?t=1701877070',
+  'https://cdn.akamai.steamstatic.com/apps/csgo/videos/csgo_react/cs2/cs2_header.mp4',
 ]
 
 const DynamicPlayer: FC<IVideoProps> = ({
@@ -29,7 +28,7 @@ const DynamicPlayer: FC<IVideoProps> = ({
         playing={isPlaying}
         onReady={handleOnReady}
         volume={0}
-        onEnded={() => setVideo(data[2])}
+        onEnded={() => setVideo(data[0])}
       />
       <div className={styles.shadow}></div>
     </div>
