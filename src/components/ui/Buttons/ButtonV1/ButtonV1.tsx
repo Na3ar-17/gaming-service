@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import styles from './Button.module.scss'
 import { IButtonProps } from '@/interfaces/button.interface'
+
 const ButtonV1: FC<IButtonProps> = ({
   text = 'Stream',
   width = 140,

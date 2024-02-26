@@ -17,7 +17,7 @@ const GameCard: NextPage<IGameCardData> = ({
   const word = underTitle.slice(0, underTitle.length - 4)
 
   return (
-    <main className={styles.card}>
+    <div className={styles.card}>
       <div className={styles.icons}>
         <FaBookmark className={styles.bookMark} />
         <FaCrown className={styles.icon} />
@@ -34,7 +34,7 @@ const GameCard: NextPage<IGameCardData> = ({
       <div className={styles.image}>
         <Image className={styles.hero} alt="hero" src={image} />
       </div>
-    </main>
+    </div>
   )
 }
 

@@ -1,3 +1,7 @@
 .button {
-  @apply hover:bg-button-v1 transition-all cursor-pointer bg-transparent border-button-v1 border-2 border-solid text-center w-[140px] h-11 rounded-md;
+  @apply transition-all cursor-pointer bg-transparent border-button-v1 border-2 border-solid text-center w-[140px] h-11 rounded-md;
+
+  &:active {
+    transform: translateY(5px);
+  }
 }

@@ -10,12 +10,6 @@ import Link from 'next/link'
 const NavBar: FC = () => {
   return (
     <nav className={styles.nav}>
-      {/* <Link href={'/'}>
-        <div className={styles.logo}>
-          <span>GOOD</span>
-          <span>GAMES</span>
-        </div>
-      </Link> */}
       <main className={styles.search}>
         <div className={styles.utils}>
           <div className={styles.input}>

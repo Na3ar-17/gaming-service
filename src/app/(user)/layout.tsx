@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import styles from './layout.module.scss'
 import Footer from '@/components/display/Footer/Footer'
 import SideBar from '@/components/common/side-bar/SideBar'
-import UserNavbar from '@/components/common/UserNavbar/UserNavbar'
+import UserNavbar from '@/components/common/user-navbar/UserNavbar'
 
 export const metadata: Metadata = {
   title: 'Good Games || Profile',
