@@ -3,9 +3,13 @@ import styles from './UserStats.module.scss'
 import logo from '../../../../public/pubg-icon2.png'
 import Image from 'next/image'
 import Pagination from '@/components/ui/Pagination/Pagination'
-interface Props {}
+import { IUserStatsData } from '@/interfaces/user-stats.interface'
+import Elements from './elements/Elements'
+interface Props {
+  data: IUserStatsData[]
+}
 
-const UserStats: NextPage<Props> = ({}) => {
+const UserStats: NextPage<Props> = ({ data }) => {
   return (
     <main className={styles.container}>
       <div className={styles.head}>
@@ -20,44 +24,10 @@ const UserStats: NextPage<Props> = ({}) => {
       <div className={styles.body}>
         <div className={styles.info}>
           <div className={styles.gameIcon}>
-            <Image className={styles.image} src={logo} alt={'logo'} />
+            <Image className={styles.image} src={logo} alt="logo" />
           </div>
 
-          <div className={styles.userInfo}>
-            <div>
-              <p>
-                Nickname <span>Dino</span>
-              </p>
-              <p>
-                Real Name <span>Tommy Shelby</span>
-              </p>
-              <p>
-                Country <span>USA</span>
-              </p>
-            </div>
-            <div>
-              <p>
-                City <span>New Yourk city</span>
-              </p>
-              <p>
-                Sport Rating <span>4001</span>
-              </p>
-              <p>
-                Group Rating <span>3999</span>
-              </p>
-            </div>
-            <div>
-              <p>
-                Winrate <span>49%</span>
-              </p>
-              <p>
-                Rating on the site <span>7.1</span>
-              </p>
-              <p>
-                Position<span>Sniper</span>
-              </p>
-            </div>
-          </div>
+          <Elements data={data} />
         </div>
       </div>
     </main>

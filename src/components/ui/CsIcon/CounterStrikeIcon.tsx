@@ -1,22 +1,20 @@
-import { FC } from "react";
-
-import { NextPage } from "next";
+import { NextPage } from 'next'
 
 interface Props {
-  height?: number;
-  width?: number;
-  color?: string;
+  height?: number
+  width?: number
+  color?: string
 }
 
-const CounterStrike: NextPage<Props> = ({
+const CounterStrikeIcon: NextPage<Props> = ({
   height = 23,
   width = 100,
-  color = "orange",
+  color = 'orange',
 }) => {
   return (
     <svg
-      width={width + "px"}
-      height={height + "px"}
+      width={width + 'px'}
+      height={height + 'px'}
       viewBox="0 0 556 114"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +31,7 @@ const CounterStrike: NextPage<Props> = ({
         fill={color}
       />
     </svg>
-  );
-};
+  )
+}
 
-export default CounterStrike;
+export default CounterStrikeIcon

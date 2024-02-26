@@ -8,17 +8,12 @@ import {
   sidebarItemsData,
   sidebarItemsDataSupport,
 } from '@/data/sidebar-items-data'
-import Link from 'next/link'
+import Logo from '@/components/ui/logo/Logo'
 
 const SideBar: NextPage = () => {
   return (
     <aside className={styles.aside}>
-      <div className={styles.logo}>
-        <Link href={'/home'}>
-          <span>GOOD</span>
-          <span>GAMES</span>
-        </Link>
-      </div>
+      <Logo />
       <div className={styles.play}>
         <Switch />
       </div>

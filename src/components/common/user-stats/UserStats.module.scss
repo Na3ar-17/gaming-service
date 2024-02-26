@@ -27,18 +27,6 @@
           transform: translate(-50%, -50%);
         }
       }
-
-      .userInfo {
-        @apply grid grid-cols-3 gap-2 gap-x-10;
-        div {
-          p {
-            @apply text-stats-text font-semibold mt-3 mb-3;
-            span {
-              @apply text-white text-sm font-semibold;
-            }
-          }
-        }
-      }
     }
   }
 }

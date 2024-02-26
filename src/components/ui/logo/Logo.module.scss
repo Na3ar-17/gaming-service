@@ -1,0 +1,16 @@
+.logo {
+  @apply cursor-pointer -mt-1 ml-4;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  span {
+    @apply block font-bold text-center  text-xl;
+    &:first-child {
+      @apply text-primary-pink;
+    }
+
+    &:last-child {
+      @apply text-[#DBDBDB];
+    }
+  }
+}
